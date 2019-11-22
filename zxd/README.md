@@ -1,3 +1,6 @@
+# 相关资料
+翻译：http://www.xzhewei.com/Note-%E7%AC%94%E8%AE%B0/Video-Object-Detection/Note-Flow-Guided-Feature-Aggregation-for-Video-Object-Detection/
+作者的视频解析：https://www.bilibili.com/video/av14789193/
 # Install
 ## 安装环境
 - python 2.7
@@ -22,4 +25,6 @@ self._param_names)
 方法：直接去掉base_module.py中`allow_extra=allow_extra`
 
 # 解析
-## `experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml`文件中的gpus控制gpu
+训练和测试：`experiments/fgfa_rfcn/fgfa_rfcn_end2end_train_test.py` 每次运行前要删除output文件夹
+测试：`experiments/fgfa_rfcn/fgfa_rfcn_test.py`  运行前在output里要有param权重文件
+`experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml`文件中的gpus控制gpu
