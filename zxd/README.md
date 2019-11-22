@@ -18,4 +18,8 @@ self._param_names)
 ```
 ### error 3
 `TypeError: init_params() got an unexpected keyword argument 'allow_extra'`
+
 方法：直接去掉base_module.py中`allow_extra=allow_extra`
+
+# 解析
+## experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml文件中的gpus控制gpu
